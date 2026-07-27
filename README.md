@@ -24,7 +24,6 @@ Google Colab is the recommended environment for running this project. The notebo
 - `Combinedpictures.pdf` – PDF file containing the PDF image dataset
 - `README.md` – Project description and instructions
 - `.gitignore` – Files excluded from the repository
-- 
 
 ## Dataset
 
