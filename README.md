@@ -31,6 +31,16 @@ The dataset consists of one PDF containing 17 still images of the bottom positio
 
 The program processes the images contained in the PDF and uses MediaPipe Pose to identify body landmarks and calculate the hip angle, knee angle, and torso lean.
 
+## Angle Ranges
+
+The program compares each image’s measurements with the following predetermined ranges:
+
+- **Hip angle:** 60°–130°
+- **Knee angle:** at least 130°
+- **Torso lean:** 25°–75° from vertical
+
+An image is considered within the expected range only when all three measurements meet these criteria. These ranges were selected from the biomechanical and exercise-form sources discussed in the accompanying research paper.
+
 ## How to Run the Project
 
 ### Google Colab
