@@ -13,6 +13,14 @@ This project uses Python and MediaPipe Pose to analyze still images of the two-h
 
 The measurements are compared with predetermined angle ranges to identify whether each position is within the expected range. The program also creates annotated images and a batch summary table showing the results.
 
+## Example Output
+
+The example below shows the analyzer evaluating the bottom position of a two-handed dumbbell Romanian deadlift. MediaPipe Pose identifies body landmarks and calculates hip angle, knee angle, and torso lean, then compares the measurements with the project's expected ranges.
+
+The sample image was provided by the project author.
+
+![Example RDL form analysis](rdl_example_output.png)
+
 ## Recommended Environment
 
 Google Colab is the recommended environment for running this project. The notebook includes installation commands and uses the Google Colab file-upload interface to select a PDF or individual image files for analysis.
@@ -22,6 +30,7 @@ Google Colab is the recommended environment for running this project. The notebo
 - `RDL_Form_Analyzer.ipynb` – Jupyter notebook containing the complete project workflow and analysis
 - `rdl_form_analyzer.py` – Python version of the project code
 - `README.md` – Project description and instructions
+- `rdl_example_output.png` — Example analysis output displayed in the README
 - `.gitignore` – Files excluded from the repository
 
 ## Dataset
@@ -61,5 +70,4 @@ An image is considered within the expected range only when all three measurement
 - Pandas
 - pdf2image
 - Poppler utilities
-- Google Colab
  
